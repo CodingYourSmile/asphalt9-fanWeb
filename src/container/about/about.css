@@ -1,0 +1,75 @@
+.asphalt__about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8.5rem;
+
+    position: relative;
+}
+
+.asphalt__about-img {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asphalt__about-img img {
+    width: 40%;
+}
+
+.asphalt__about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+
+    z-index: 2;
+
+}
+
+.asphalt__about-history {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    z-index: 2;
+
+}
+
+.asphalt__about-us p,
+.asphalt__about-history p {
+    margin: 3.2rem 0;
+    color: var(--color-crimson);
+}
+
+.asphalt__about-div {
+    display: block;
+    height: 70rem;
+    width: 4px;
+
+    background: var(--color-golden);
+    z-index: 0;
+
+}
+
+@media screen and (max-width: 960px) {
+    .asphalt__about-us,
+    .asphalt__about-history {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .asphalt__about {
+        flex-direction: column;
+    }
+
+    .asphalt__about-div {
+        display: none;
+    }
+}

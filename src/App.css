@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+.section__padding {
+    padding: 0 31rem;
+    padding-top: 8rem ;
+    padding-bottom: 16rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section__margin {
+    margin: 12rem 31rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.asphalt__fontbase {
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+}
+
+.asphalt__fontalt {
+        font-family: var(--font_alt);
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        color: var(--color-grey);
+}
+
+.asphalt__title {
+        font-family: var(--font-base);
+        color: var(--color-golden);
+        font-weight: 600;
+        font-size: 6.4rem;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+}
+
+.asphalt__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        padding: 8px 32px;
+
+        width: 194px;
+        height: 44px;
+
+        background: var(--color-golden);
+
+        font-family: var(--font-base);
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        color:var(--color-black);
+}
+
+.asphalt__bg {
+        background: url('./assets/bg.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.scale-up-top {
+	-webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+@keyframes scale-up-center {
+0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+
+
+ @-webkit-keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+@media screen and (max-width: 1550px) {
+        .section__padding {
+                padding: 0 8.4rem;
+                padding-top: 4rem ;
+                padding-bottom: 4rem;
+        }
 }
+
+@media screen and (max-width: 1200px) { 
+        .section__padding {
+                padding: 0 8.4rem;
+                padding-top: 4rem ;
+                padding-bottom: 4rem;
+        }
+
+        .asphalt__title {
+                font-size: 4.2rem;
+        }
+}
+
+
+@media screen and (max-width: 960px) {
+        .section__padding {
+                padding: 0 10rem;
+                padding-top: 4rem ;
+                padding-bottom: 4rem;
+        }
+
+        .asphalt__title {
+                font-size: 3.4rem;
+        }
+}
+
+@media screen and (max-width: 550px) {
+        .section__padding {
+                padding: 0 1.6rem;
+                padding-top: 4rem ;
+                padding-bottom: 4rem;
+        }
+
+        .asphalt__title {
+                font-size: 3.2rem;
+        }
+}
+
+

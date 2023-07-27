@@ -1,0 +1,116 @@
+.asphalt__gallery {
+    display: flex;
+    flex-direction: row;
+
+    padding: 13rem 0 13rem 11.6rem;
+}
+
+.asphalt__gallery-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    /* min-width: 500px; */
+    padding-right: 2rem;
+}
+
+.asphalt__gallery-content button {
+    margin-top: 1rem;
+}
+
+.asphalt__gallery-images {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    position: relative;
+}
+
+.asphalt__gallery-images_container {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+
+    -ms-overflow-style: none;
+}
+
+.asphalt__gallery-images_container::-webkit-scrollbar {
+    display: none;
+}
+
+.asphalt__gallery-images_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    min-width: 301px;
+    height: 447px;
+    margin-right: 2rem;
+}
+
+.asphalt__image-icon {
+    position: absolute;
+    color: #FFF;
+    font-size: 4rem;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.asphalt__gallery-images_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.5s ease; 
+}
+
+.asphalt__gallery-images_card:hover img {
+    opacity: 0.35;
+}
+
+.asphalt__gallery-images_card:hover .gallery__image-icon {
+    opacity: 1;
+}
+
+.asphalt__gallery-images_arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 5%;
+}
+
+.gallery__arrow-icon {
+    color: var(--color-golden);
+    font-size: 4rem;
+    cursor: pointer;
+    background-color: var(--color-black);
+    border-radius: 5px;
+}
+
+.gallery__arrow-icon:hover {
+    color: var(--color-crimson);
+}
+
+@media screen and (max-width: 550px) {
+
+    .asphalt__gallery {
+        flex-direction: column;
+        padding:  4rem 0 4rem 1.6rem;
+    }
+
+    .asphalt__gallery-content {
+        margin-bottom: 1.6rem;
+    }
+
+    .asphalt__gallery-images {
+        max-width: unset;
+    }
+}

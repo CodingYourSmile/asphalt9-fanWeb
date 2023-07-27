@@ -1,0 +1,19 @@
+.asphalt__award {
+    display: flex;
+    gap: 3.2rem;
+    width: 38rem;
+}
+
+.asphalt__award-img {
+    width: 7.9rem;
+    height: 7.9rem;
+}
+
+.asphalt__award-img img {
+    width: 100%;
+}
+
+.asphalt__award-content p:nth-child(1) {
+    font-size: 2.3rem;
+    color: var(--color-golden);
+}

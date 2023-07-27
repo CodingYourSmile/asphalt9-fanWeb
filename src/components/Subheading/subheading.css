@@ -1,0 +1,12 @@
+.asphalt__subheading h4 {
+    font-family: var(--font-alt);
+    font-size: 2rem;
+    color: #FFF;
+    margin-bottom: 0.5rem;
+}
+
+.asphalt__subheading div {
+    width: 32px;
+    height: 2px;
+    background-color: var(--color-golden);
+}
